@@ -1,0 +1,25 @@
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.app-title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.app-description {
+  text-align: center;
+  color: var(--gray-light);
+  margin-bottom: 24px;
+  max-width: 680px;
+}
+
+.accordions-container {
+  max-width: 600px;
+  width: 100%;
+}

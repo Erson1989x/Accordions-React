@@ -1,0 +1,45 @@
+/* --- Accordion styles --- */
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .accordion-title h3 {
+    font-size: 20px;
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+  
+  .icon-down {
+    display: none;
+  }
+  
+  .accordion-description {
+    color: var(--gray-light);
+    display: none;
+  }
+  
+  .accordion-separator {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  
+  .accordion-title.active h3 {
+    color: var(--blue);
+  }
+
+  
+  
+  .accordion-description {
+    color: var(--gray-light);
+    display: none;
+  }
+
+  .accordion-title.active + .accordion-description {
+    display: block;
+  }
+  
