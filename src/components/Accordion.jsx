@@ -18,11 +18,11 @@ const Accordion = ({ questionNumber, questionDescription }) => {
           <h3>Question {questionNumber}</h3>
           <img className='icon-right' src={isOpen ? iconDown : iconRight} alt="icon-right" />
         </div>
-        {isOpen && (
+        {isOpen ? (
           <p className='accordion-description'>
             {questionDescription}
           </p>
-        )}
+        ): null}
       </div>
       <hr className='accordion-separator' />
     </div>
